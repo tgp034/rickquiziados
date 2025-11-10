@@ -1,0 +1,143 @@
+body {
+  background-image: url("https://w.forfun.com/fetch/c8/c830b47bd96297a2c7e79598b9f6a345.jpeg");
+}
+
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
+
+.personajes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.personaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.60);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  margin: 20px;
+  padding: 20px;
+  width: 350px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  p {
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header button {
+  background: url('../../../assets/portal-inicio.gif') no-repeat center / cover;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+
+.header form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 150px;
+}
+
+.header input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.personajes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.personaje {
+  flex: 0 1 calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.personaje img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

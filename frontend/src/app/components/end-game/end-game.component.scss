@@ -1,0 +1,19 @@
+.fondo{
+    background-image: url("../../../assets/endGame.jpg");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.target{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    font-family: "Get Schwifty";
+}
+

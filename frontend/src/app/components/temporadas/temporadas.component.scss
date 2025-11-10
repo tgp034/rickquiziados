@@ -1,0 +1,56 @@
+.season-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.season-button {
+  width: 500px;
+  background-color: white;
+  color: green;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: 2px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.season-button:hover {
+  background-color: green;
+  color: white;
+}
+
+.season-button:active {
+  transform: scale(0.95);
+}
+
+.episodes-container {
+  flex: 1;
+  flex-direction: column;
+}
+
+.episodes-container ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.episodes-container li {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  color: white;
+  width: 500px;
+}
+
+ h1{
+  padding: 2%;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+}
+

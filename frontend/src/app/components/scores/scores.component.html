@@ -1,0 +1,79 @@
+<body>
+
+<div class="Container">
+    <div class="imageContainer">
+        <img class="animate__animated animate__heartBeat" src="../../../assets/Top-scores-unscreen-resized.webp">
+        <!--<span class="animate__animated animate__heartBeat">Top Scores</span>-->
+    </div>
+    <div #loader class="loader">
+        <img src="../../../assets/loader.gif">
+        <p>Cargando datos...</p>
+    </div>
+    <div #scores class="scoresContainer">
+        
+    <div *ngFor="let dato of ranking; index as i" class="score">
+        <p>Top {{i+1}}</p>
+        <p>{{dato.name}}</p>
+        <p>{{dato.puntuacion}}</p>
+    </div>
+    <!--<div class="score">
+        <p>Top1</p>
+        <p>Luque</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top2</p>
+        <p>Carlos</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top3</p>
+        <p>Juanra</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top4</p>
+        <p>Aranda</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top5</p>
+        <p>Alejandro</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top6</p>
+        <p>Tito</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top7</p>
+        <p>Joaquin</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top8</p>
+        <p>patatas fritas con tomate</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top9</p>
+        <p>aureeeeeeeeeeeeeeeelio</p>
+        <p>Score</p>
+    </div>
+    <div class="score">
+        <p>Top10</p>
+        <p>cositas</p>
+        <p>Score</p>
+    </div>
+-->
+    </div>
+    <div class="buttoncontainer">
+        <button class="resetButton" [routerLink]="['/']">
+            <img class="imagen" src="../../../assets/reset-button.webp" />
+        </button>
+    </div>
+</div>
+
+
+</body>

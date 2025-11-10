@@ -1,0 +1,7 @@
+<div class="personaje">
+    <h2>{{ personajeapi.name }}</h2>
+    <p>Estado: {{ personajeapi.status }}</p>
+    <p>Especie: {{ personajeapi.species }}</p>
+    <p>Género: {{ personajeapi.gender }}</p>
+    <img [src]="personajeapi.image" alt="{{ personajeapi.name }}">
+  </div>

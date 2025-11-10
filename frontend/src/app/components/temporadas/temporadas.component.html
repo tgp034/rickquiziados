@@ -1,0 +1,14 @@
+<div class="temporadas">
+  <h1>Temporadas</h1>
+  <div *ngFor="let temporada of seasons | keyvalue" class="season-container ">
+    <button (click)="toggleEpisodes(temporada.key)" class="season-button">
+      {{ temporada.key }}
+    </button>
+    <div *ngIf="selectedSeason === temporada.key" class="episodes-container">
+      <ul>
+        <li *ngFor="let episode of temporada.value">{{ episode }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+

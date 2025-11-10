@@ -1,0 +1,88 @@
+<div class="continer">
+  <div class="score">Score: {{ puntos }}</div>
+  <div class="question-box">
+    <h2 class="pregunta">{{ preguntaActual.pregunta }}</h2>
+  </div>
+  <h1 class="contador">{{ tiempoRestante }}</h1>
+  <div class="time-bar-container">
+    <div
+      class="time-bar"
+      [class.animacion]="animacionActiva"
+      *ngIf="animacionActiva"
+    ></div>
+  </div>
+  <div class="options">
+    <div>
+      <button
+        class="respuesta respuesta-1"
+        (click)="comprobarRespuesta(preguntaActual.respuestas[0], 1)"
+        [class.correcta]="respuestaCorrecta1"
+        [class.incorrecta]="respuestaInorrecta1"
+      >
+        <span class="texto-escupido">{{
+          preguntaActual.respuestas[0].respuesta
+        }}</span>
+      </button>
+    </div>
+    <div>
+      <button
+        class="respuesta respuesta-2"
+        (click)="comprobarRespuesta(preguntaActual.respuestas[1], 2)"
+        [class.correcta]="respuestaCorrecta2"
+        [class.incorrecta]="respuestaIncorrecta2"
+      >
+        <span class="texto-escupido">{{
+          preguntaActual.respuestas[1].respuesta
+        }}</span>
+      </button>
+    </div>
+    <div *ngIf="preguntaActual.respuestas.length > 2">
+      <button
+        class="respuesta respuesta-3"
+        (click)="comprobarRespuesta(preguntaActual.respuestas[2], 3)"
+        [class.correcta]="respuestaCorrecta3"
+        [class.incorrecta]="respuestaIncorrecta3"
+      >
+        <span class="texto-escupido">{{
+          preguntaActual.respuestas[2].respuesta
+        }}</span>
+      </button>
+    </div>
+    <div *ngIf="preguntaActual.respuestas.length > 2">
+      <button
+        class="respuesta respuesta-4"
+        (click)="comprobarRespuesta(preguntaActual.respuestas[3], 4)"
+        [class.correcta]="respuestaCorrecta4"
+        [class.incorrecta]="respuestaIncorrecta4"
+      >
+        <span class="texto-escupido">{{
+          preguntaActual.respuestas[3].respuesta
+        }}</span>
+      </button>
+      <p-dialog
+        [(visible)]="displayDialogPersonaje"
+        [modal]="true"
+        [style]="{ width: '40vw' }"
+        [closable]="false"
+        class="mi-dialogo"
+        [contentStyle]="{
+          display: 'flex',
+          'flex-direction': 'column',
+          'align-items': 'center',
+          'justify-content': 'center'
+        }"
+      >
+        <!-- <div class="correcto"> ¡Correcto! </div> -->
+        <app-tarjeta-personaje></app-tarjeta-personaje>
+        <button
+          type="button"
+          pButton
+          icon="pi pi-check"
+          (click)="displayDialogPersonaje = false; obtenerPreguntaAleatoria()"
+          label="Continuar"
+          class="mi-boton"
+        ></button>
+      </p-dialog>
+    </div>
+  </div>
+</div>

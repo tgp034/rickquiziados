@@ -1,0 +1,48 @@
+<div class="fondo">
+  <div class="fixed w-full flex justify-center items-start">
+    <div *ngIf="score >= 100; then buenaPuntuacion; else malaPuntuacion"></div>
+    <ng-template #buenaPuntuacion>
+      <img
+        class="w-60"
+        src="../../../assets/buenaPuntuacion.gif"
+        alt="Buena puntuación"
+      />
+    </ng-template>
+    <ng-template #malaPuntuacion>
+      <img
+        class="w-60"
+        src="../../../assets/malaPuntuacion.gif"
+        alt="Mala puntuación"
+      />
+    </ng-template>
+  </div>
+  <div
+    class="bg-black target flex flex-col justify-start items-center text-white shadow-lg shadow-gray-800"
+  >
+    <h2 class="text-green-500 text-6xl titulo pt-5">Puntuación</h2>
+    <h2 class="text-4xl pt-7">{{ score }}</h2>
+
+    <div class="flex flex-col w-3/4 pt-5">
+      <label>Nombre</label>
+      <input
+        id="name"
+        [(ngModel)]="name"
+        class="w-full rounded-sm text-black"
+        type="text"
+        placeholder="Nombre"
+      />
+    </div>
+    <div class="flex justify-between w-2/4 pt-8">
+      <button 
+      class="bg-red-800 z-10 rounded-lg w-28"
+      routerLink="/">Cancelar</button>
+      <button
+        class="bg-green-800 z-10 rounded-lg w-28"
+        (click)="addPuntuacion()"
+        [routerLink]="isValidName(name) ? '/scores' : null"
+      >
+        Guardar
+      </button>
+    </div>
+  </div>
+</div>

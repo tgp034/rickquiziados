@@ -1,0 +1,66 @@
+body {
+    background-image: url("https://w.forfun.com/fetch/c8/c830b47bd96297a2c7e79598b9f6a345.jpeg");
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+  
+  .personajes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: white;
+    }
+  
+    p {
+      margin-bottom: 5px;
+      color: white;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }

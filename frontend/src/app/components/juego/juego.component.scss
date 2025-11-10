@@ -1,0 +1,286 @@
+.continer {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  background-color: black !important;
+  background-image: url("../../../assets/Fondo-juego.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Roboto, sans-serif;
+  grid-template-columns: 15% 70% 15%;
+}
+
+.respuesta-1,
+.respuesta-2,
+.respuesta-3,
+.respuesta-4 {
+  min-height: 100%; /* Ajusta el valor según tus necesidades */
+  min-width: 80%;
+  grid-column: 2;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../../../assets/potal-patron.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  text-align: center; /* Added margin for spacing between buttons */
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.6);
+  
+}
+
+.respuesta-1 {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.respuesta-2 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.respuesta-3 {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.respuesta-4 {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.correcta {
+  background-color: rgba(151, 206, 76, 0.5);
+}
+.incorrecta {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  min-width: 100%;
+  min-height: 40%;
+  max-height: 40%;
+  grid-column: 2;
+}
+
+.option-button {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url("../../../assets/potal-patron.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-duration: 5s;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  animation: escupir 2s linear forwards;
+  grid-column: 2;
+}
+
+@keyframes fillTime {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.time-bar-container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  grid-column: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.time-bar {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  border-radius: 10px;
+  background-size: contain;
+  background-position: center;
+  background-color: yellowgreen;
+  box-shadow: 0 0 10px rgba(151, 206, 76, 0.5) inset;
+  border: none;
+  
+}
+
+.time-bar.animacion {
+  animation: fillTime 20s linear forwards;
+}
+
+@keyframes escupir {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.texto-escupido {
+  display: inline-block;
+  animation: escupir 1s linear forwards;
+  width: 350px; /* Cambia esto al tamaño que desees */
+  height: 50px; /* Cambia esto a la altura que desees */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  padding-left: 25px; /* Cambia esto al margen que desees */
+}
+
+.question-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 90%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-position: center;
+  grid-column: 2;
+}
+
+.pregunta {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  color: white;
+  margin: 8px;
+
+}
+
+.correcto {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  color: white;
+  margin: 8px;
+}
+
+.contador {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 96px;
+  grid-column: 2;
+}
+
+div.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 40px;
+  font-family: "Get Schwifty", sans-serif;
+  text-align: center;
+  margin: 8px; /* Added margin for spacing between buttons */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.options {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr); // Crea dos columnas de igual ancho
+  justify-content: center;
+  align-items: center;
+}
+
+.mi-boton {
+  margin: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;  // Ajusta este valor a lo que necesites padding: 20px;  // Ajusta este valor a lo que necesites
+  color: white;  // Cambia el color del texto a blanco
+}
+
+.mi-dialogo .ui-dialog-content {
+  background-color: transparent;
+}
+
+/* En el CSS del componente principal */
+
+p-dialog ::ng-deep .p-dialog {
+  margin-top: 3%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5) inset;
+}
+
+p-dialog ::ng-deep .p-dialog {
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo del diálogo */
+}
+
+p-dialog ::ng-deep .p-dialog-header {
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo del encabezado */
+}
+
+p-dialog ::ng-deep .p-dialog-content {
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo del contenido */
+}
+
+p-dialog ::ng-deep .p-dialog-footer {
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo del pie de página */
+}
+
+p-dialog ::ng-deep .p-dialog-content {
+  overflow: hidden; /* Ocultar la barra de scroll */
+}

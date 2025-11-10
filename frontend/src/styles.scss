@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import 'animate.css';
+@import "primeicons/primeicons.css";
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url(./assets/get_schwifty.ttf);
+}
+@font-face {
+  font-family: 'penis';
+  src: url(./assets/Penis\ Typography\ Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  user-select: none;
+}

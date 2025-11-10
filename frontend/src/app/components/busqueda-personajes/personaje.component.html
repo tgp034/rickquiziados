@@ -1,0 +1,19 @@
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 50px;">
+    <button routerLink="/" style="margin-left: auto; background: url('../../../assets/portal-inicio.gif') no-repeat center / cover; border: none; width: 100px; height: 100px;"></button>
+    <form (submit)="searchCharacterByName()" style="display: flex; justify-content: center; align-items: center; flex-grow: 1; margin-right: 150px;">
+      <input [(ngModel)]="nombrePersonaje" name="nombrePersonaje" placeholder="Buscar personaje"> 
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+<ul class="personajes-container">
+  <li *ngFor="let personaje of personajes" class="personaje">
+    <h2>{{ personaje.name }}</h2>
+    <p>Estado: {{ personaje.status }}</p>
+    <p>Especie: {{ personaje.species }}</p>
+    <p>Género: {{ personaje.gender }}</p>
+    <img [src]="personaje.image" alt="{{ personaje.name }}">
+  </li>
+</ul>
+</body>
