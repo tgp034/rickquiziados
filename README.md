@@ -8,8 +8,6 @@ Al ingresar a "La Guerra de los Rickquiziados", los usuarios son recibidos con u
 Los usuarios pueden acumular puntos lo que les permite comparar su progreso con otros jugadores en el ranking global.
 
 En resumen, "La Guerra de los Rickquiziados" ofrece a los fanáticos de "Rick and Morty" una forma divertida y desafiante de poner a prueba sus conocimientos sobre la serie.
-
-[Figma](https://www.figma.com/file/3qDo6QQc47Z6f2skMKVzCE/RickQuiziados?type=design&node-id=0%3A1&mode=design&t=UyTeoWHX9C1hFCn0-1)
   
 ## Autores
 
