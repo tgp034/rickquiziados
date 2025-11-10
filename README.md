@@ -10,16 +10,6 @@ Los usuarios pueden acumular puntos lo que les permite comparar su progreso con 
 En resumen, "La Guerra de los Rickquiziados" ofrece a los fanáticos de "Rick and Morty" una forma divertida y desafiante de poner a prueba sus conocimientos sobre la serie.
 
 [Figma](https://www.figma.com/file/3qDo6QQc47Z6f2skMKVzCE/RickQuiziados?type=design&node-id=0%3A1&mode=design&t=UyTeoWHX9C1hFCn0-1)
-
-## URl de las páginas compiladas
-  - https://rickquiziados.ddns.net/
-  - https://rickquiziados.ddns.net/notfound
-  - https://rickquiziados.ddns.net/notfound
-  - https://rickquiziados.ddns.net/game
-  - https://rickquiziados.ddns.net/admin
-  - https://rickquiziados.ddns.net/adminpanel
-  - https://rickquiziados.ddns.net/character
-  - https://rickquiziados.ddns.net/endgame
   
 ## Autores
 
